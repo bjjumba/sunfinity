@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+    rel="stylesheet" />
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+        <script src="https://cdn.tailwindcss.com/3.2.4"></script>
+        <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+            fontFamily: {
+                sans: ["Roboto", "sans-serif"],
+                body: ["Roboto", "sans-serif"],
+                mono: ["ui-monospace", "monospace"],
+            },
+            },
+            corePlugins: {
+            preflight: false,
+            },
+        };
+        </script>
+    <title>Sunfinity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<!-- Container for demo purpose -->
+<div>
+
+    <!-- Section: Design Block -->
+    <section class="mb-40">
+      <!-- <nav
+        class="navbar navbar-expand-lg shadow-md py-2 bg-white relative flex items-center w-full justify-between"
+      >
+        <div class="px-6 w-full flex flex-wrap items-center justify-between">
+          <div class="flex items-center">
+            <button
+              class="navbar-toggler border-0 py-3 lg:hidden leading-none text-xl bg-transparent text-gray-600 hover:text-gray-700 focus:text-gray-700 transition-shadow duration-150 ease-in-out mr-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContentY"
+              aria-controls="navbarSupportedContentY"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                class="w-5"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                ></path>
+              </svg>
+            </button>
+            <a class="navbar-brand text-blue-600" href="#!">
+              <svg
+                class="w-5 h-5 ml-2 lg:ml-0 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M485.5 0L576 160H474.9L405.7 0h79.8zm-128 0l69.2 160H149.3L218.5 0h139zm-267 0h79.8l-69.2 160H0L90.5 0zM0 192h100.7l123 251.7c1.5 3.1-2.7 5.9-5 3.3L0 192zm148.2 0h279.6l-137 318.2c-1 2.4-4.5 2.4-5.5 0L148.2 192zm204.1 251.7l123-251.7H576L357.3 446.9c-2.3 2.7-6.5-.1-5-3.2z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="navbar-collapse collapse grow items-center" id="navbarSupportedContentY">
+            <ul class="navbar-nav mr-auto lg:flex lg:flex-row">
+              <li class="nav-item">
+                <a
+                  class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+                  href="#!"
+                  data-mdb-ripple="true"
+                  data-mdb-ripple-color="light"
+                  >Dashboard</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+                  href="#!"
+                  data-mdb-ripple="true"
+                  data-mdb-ripple-color="light"
+                  >Team</a
+                >
+              </li>
+              <li class="nav-item mb-2 lg:mb-0">
+                <a
+                  class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+                  href="#!"
+                  data-mdb-ripple="true"
+                  data-mdb-ripple-color="light"
+                  >Projects</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex items-center lg:ml-auto">
+            <button
+              type="button"
+              class="inline-block px-6 py-2.5 mr-2 bg-transparent text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:text-blue-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out"
+              data-mdb-ripple="true"
+              data-mdb-ripple-color="light"
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+              data-mdb-ripple="true"
+              data-mdb-ripple-color="light"
+            >
+              Sign up for free
+            </button>
+          </div>
+        </div>
+      </nav> -->
+  
+      <div
+        class="relative overflow-hidden bg-no-repeat bg-cover"
+        style="
+          background-position: 50%;
+          background-image: url('https://images.squarespace-cdn.com/content/v1/5788eade6a4963f2a543ea10/1623679891936-QWUHBJ12QGVI1X0T8Z57/most+efficient+solar+panels.jpg?format=1000w');
+          height: 80vh;
+        "
+      >
+        <div
+          class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+          style="background-color: rgba(0, 0, 0, 0.75)"
+        >
+          <div class="flex justify-center items-center h-full">
+            <div class="text-center text-white px-6 md:px-12">
+              <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">
+                Get cleaner energy <br /><span>with Sunfinity</span>
+              </h1>
+              <!-- <button
+                type="button"
+                class="inline-block px-7 py-3 border-2 border-white text-white font-medium text-sm leading-snug uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                data-mdb-ripple="true"
+                data-mdb-ripple-color="light"
+              >
+                Get started
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Design Block -->
+  
+  </div>
+  <!-- Container for demo purpose -->
+
+<!-- Container for demo purpose -->
+<div class="container my-24 px-6 mx-auto">
+
+    <!-- Section: Design Block -->
+    <section class="mb-32 text-gray-800">
+      <!-- <h2 class="text-2xl font-bold mb-12 text-center">Problem Statement</h2> -->
+  
+      <div class="flex flex-wrap lg:flex-row-reverse mb-12">
+        <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6 mb-6 lg:mb-0">
+          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg"
+            style="background-position: 50%" data-mdb-ripple="true" data-mdb-ripple-color="light">
+            <img src="https://energyandminerals.go.ug/wp-content/uploads/2021/11/vandalism.jpg" class="w-full" alt="Louvre" />
+            <a href="#!">
+              <div
+                class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                style="background-color: rgba(251, 251, 251, 0.2)"></div>
+            </a>
+          </div>
+        </div>
+  
+        <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6">
+          <h3 class="text-2xl font-bold mb-4">Problem Statement</h3>
+          <!-- <div class="text-blue-600 text-sm mb-4 flex items-center font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 mr-2">
+              Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License)
+              <path fill="currentColor"
+                d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
+            </svg>
+            Art
+          </div> -->
+          <p class="text-gray-500">
+            Most recent official statistics show that only 26.7% of households have access to electricity, including just 18% in 
+            rural areas(Uganda Bureau of Statistics, 2016).
+          </p><br>
+          <p class="text-gray-500">
+            In addition to the limited grid, barriers include high electricity tarrifs and connection charges.
+            Moreover, funding shortages have slowed the the implementation of existing policies, including suspension
+            of the Electricity - Connection Policy in late 2020 (Nabukeera, 2020; Bimbo, McRae, & Steinbuks, 2018)
+          </p>
+        </div>
+      </div>
+  
+      <div class="flex flex-wrap">
+        <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
+          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg"
+            style="background-position: 50%" data-mdb-ripple="true" data-mdb-ripple-color="light">
+            <img src="https://africa-energy-portal.org/sites/default/files/2019-03/powerlines.jpg" class="w-full" alt="Louvre" />
+            <a href="#!">
+              <div
+                class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                style="background-color: rgba(251, 251, 251, 0.2)"></div>
+            </a>
+          </div>
+        </div>
+  
+        <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6">
+          <h3 class="text-2xl font-bold mb-4">Our Solution</h3>
+          <!-- <div class="text-yellow-600 text-sm mb-4 flex items-center font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="w-4 h-4 mr-2">
+              Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License)
+              <path fill="currentColor"
+                d="M608 64H32C14.33 64 0 78.33 0 96v320c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V96c0-17.67-14.33-32-32-32zM48 400v-64c35.35 0 64 28.65 64 64H48zm0-224v-64h64c0 35.35-28.65 64-64 64zm272 176c-44.19 0-80-42.99-80-96 0-53.02 35.82-96 80-96s80 42.98 80 96c0 53.03-35.83 96-80 96zm272 48h-64c0-35.35 28.65-64 64-64v64zm0-224c-35.35 0-64-28.65-64-64h64v64z" />
+            </svg>
+            Business
+          </div> -->
+          <!-- <p class="text-gray-500 mb-6 text-sm">
+            Published <u>10.01.2022</u> by
+            <a href="#!">Joe Svan</a>
+          </p> -->
+          <p class="text-gray-500">
+            Works like a simple generator that can be carried around. Has a container in which we can house the inverter, lithium ion batteries and the charge controller.
+          </p><br>
+          <p class="text-gray-500">
+            Its cover consists of two solar panels that are foldable when not in use. (Also has provision to detach and extend panels incase need be).
+            Has AC socket outlets from which house hold appliances can be connected.
+          </p>
+          <br>
+          <h3 class="text-2xl font-bold mb-4">Unique Value Proposition</h3>
+          <p class="text-gray-500">
+            Portable and therefore can be used in different location. Does not require additional electric installation provisions for houses lacking.
+          </p><br>
+          <p class="text-gray-500">
+            Standardization as all components of solar system will be purchased as one.
+          </p>
+          <br>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Design Block -->
+  
+  </div>
+  <!-- Container for demo purpose -->
+    
+<section class="bg-slate-800 text-white">
+    <div
+      class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8"
+    >
+      <div class="mx-auto max-w-lg text-center">
+        <h2 class="text-3xl font-bold sm:text-4xl">Target Market</h2>
+      </div>
+  
+      <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <a
+          class="block bg-white-900 bg-zinc-50 rounded-xl bg-white-900 border border-white-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+          href=""
+        >
+        <svg fill="#000000" class="h-10 w-10 text-pink-500" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M3 4L3 26L6 26L6 46L20 46L30 46L44 46L44 26L47 26L47 25L47 4L3 4 z M 5 6L45 6L45 24L43.167969 24 A 1.0001 1.0001 0 0 0 42.841797 24L32.548828 24L25 12.136719L17.451172 24L7.1542969 24 A 1.0001 1.0001 0 0 0 6.984375 23.986328 A 1.0001 1.0001 0 0 0 6.8398438 24L5 24L5 6 z M 25 15.863281L31.451172 26L42 26L42 44L30 44L30 35C30 32.250484 27.749516 30 25 30C22.250484 30 20 32.250484 20 35L20 44L8 44L8 26L18.548828 26L25 15.863281 z M 10 30L10 31L10 39L18 39L18 30L10 30 z M 32 30L32 31L32 39L40 39L40 30L32 30 z M 12 32L16 32L16 37L12 37L12 32 z M 25 32C26.668484 32 28 33.331516 28 35L28 44L22 44L22 35C22 33.331516 23.331516 32 25 32 z M 34 32L38 32L38 37L34 37L34 32 z"></path></g></svg>
+  
+          <h2 class="mt-4 text-xl font-bold text-neutral-900">HouseHolds</h2>
+  
+          <p class="mt-1 text-sm text-neutral-900">
+            Households without access to the grid form a major market segment
+          </p>
+        </a>
+  
+        <a
+          class="block rounded-xl border block bg-zinc-50 border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+          href=""
+        >
+        <svg viewBox="0 0 24 24" class="h-10 w-10 text-pink-500" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.1" d="M4.50938 10.4343C4.7433 8.79689 4.86026 7.97818 5.42419 7.48909C5.98812 7 6.81514 7 8.46918 7H9H15H15.5308C17.1849 7 18.0119 7 18.5758 7.48909C19.1397 7.97818 19.2567 8.79689 19.4906 10.4343L20.3478 16.4343C20.6512 18.5586 20.803 19.6208 20.2049 20.3104C19.6068 21 18.5339 21 16.388 21H16H8H7.61204C5.46614 21 4.3932 21 3.79511 20.3104C3.19703 19.6208 3.34877 18.5586 3.65224 16.4343L4.50938 10.4343Z" fill="#323232"></path> <path d="M4.50938 10.4343C4.7433 8.79689 4.86026 7.97818 5.42419 7.48909C5.98812 7 6.81514 7 8.46918 7H9H15H15.5308C17.1849 7 18.0119 7 18.5758 7.48909C19.1397 7.97818 19.2567 8.79689 19.4906 10.4343L20.3478 16.4343C20.6512 18.5586 20.803 19.6208 20.2049 20.3104C19.6068 21 18.5339 21 16.388 21H16H8H7.61204C5.46614 21 4.3932 21 3.79511 20.3104C3.19703 19.6208 3.34877 18.5586 3.65224 16.4343L4.50938 10.4343Z" stroke="#323232" stroke-width="2" stroke-linejoin="round"></path> <path d="M9 11V5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V11" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+  
+          <h2 class="mt-4 text-xl font-bold text-neutral-900">Shops</h2>
+  
+          <p class="mt-1 text-sm text-neutral-900">
+            Trading centres from a major part of the rural eco-system. Places for charging, electronic repair and other activities
+          </p>
+        </a>
+  
+        <a
+          class="block rounded-xl border block bg-zinc-50 border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+          href=""
+        >
+          <svg viewBox="0 0 24 24" class="h-10 w-10 text-pink-500" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M19 10L19 20H5M15.5 6.5L12 3L5 10V16M12 11V17M9 14H15" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+          <h2 class="mt-4 text-xl font-bold text-neutral-900">Health Centres</h2>
+  
+          <p class="mt-1 text-sm text-neutral-900">
+           Health centres without access to the grid need portable inexpensivenes
+           solutions to drug storage
+          </p>
+        </a>
+       
+      </div>
+    </div>
+  </section>
+
+
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+</html>
